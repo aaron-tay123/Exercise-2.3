@@ -1,0 +1,52 @@
+package PrinterScanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Printer epson = new Printer();
+		Printer hp    = new Printer();
+		Printer brother= new Printer();
+		Printer canon = new Printer();
+		
+		System.out.println("EPSON CHARACTERS");
+		epson.printCharacters();
+		System.out.println("");
+		epson.calPrice(550);
+		System.out.println("");
+		epson.calPayment();
+		System.out.println("");
+		epson.claimWarranty();
+		System.out.println("................................");
+		
+		System.out.println("HP CHARACTERS");
+		hp.printCharacters();
+		System.out.println("");
+		hp.calPrice(480);
+		System.out.println("");
+		hp.calPayment();
+		System.out.println("");
+		hp.claimWarranty();
+		System.out.println("................................");
+
+		System.out.println("BROTHER CHARACTERS");
+		brother.printCharacters();
+		System.out.println("");
+		brother.calPrice(550);
+		System.out.println("");
+		brother.calPayment();
+		System.out.println("");
+		brother.claimWarranty();
+		System.out.println("................................");
+		
+		System.out.println("CANON CHARACTERS");
+		canon.printCharacters();
+		System.out.println("");
+		canon.calPrice(550);
+		System.out.println("");
+		canon.calPayment();
+		System.out.println("");
+		canon.claimWarranty();
+		System.out.println("................................");
+	}
+
+}
