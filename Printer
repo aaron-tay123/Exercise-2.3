@@ -1,0 +1,66 @@
+package PrinterScanner;
+
+import java.util.Scanner;
+
+public class Printer {
+	
+	Scanner in = new Scanner(System.in);
+	int price;
+	int totalPrice;
+	int totalYear;
+	
+	void printCharacters() {
+		System.out.println("Please enter the printer brand : ");
+		String b = in.nextLine();
+		System.out.println("Please enter the printer model : ");
+		String m = in.nextLine();
+		System.out.println("Do you want the printer has the function of scanner(Y/N): ");
+		char o = in.nextLine().charAt(0);
+		System.out.println("Please enter the printer size  : ");
+		String s = in.nextLine();
+		System.out.println("Please enter the printer color : ");
+		String c = in.nextLine();
+		System.out.println("......................................");
+		System.out.println("Brand   : "+ b);
+		System.out.println("Model   : "+ m);
+		System.out.println("Scanner : "+ o);
+		System.out.println("Size    : "+ s);
+		System.out.println("Color   : "+ c);
+		System.out.println("......................................");
+		
+	}
+	
+	void calPrice(int p) {
+		
+		System.out.println("Please enter the quantity of printer you want to buy: ");
+		int q = in.nextInt();
+        totalPrice= p*q;
+        System.out.println("The total price of the printer : "+ "RM" + totalPrice);
+	}
+    void calPayment() {
+		
+		System.out.println("Please enter your payment: RM ");
+	    int pa = in.nextInt();
+	    int balance = pa - totalPrice;
+	    System.out.println("Balance: " + "RM" + balance);
+	    System.out.println("Thank You!! Please Welcome For Next Time!!");
+		}
+	
+	void claimWarranty() {
+		
+		System.out.println("Check For Warranty");
+		System.out.println("Please enter the years that you bought the printer :");
+		int y = in.nextInt();
+		totalYear= 2021-y;
+		System.out.println("The total year of the printer you used: " + totalYear + "years");
+		if(totalYear<10) {
+			System.out.println("The warranty is valid");
+			System.out.println("We will do the replacement for you.");
+			System.out.println("..........................................");
+		}else if(totalYear>10) {
+			System.out.println("I am sorry");
+			System.out.println("The warranty is invalid");
+		}
+    
+   }			
+}
