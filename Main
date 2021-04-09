@@ -8,7 +8,6 @@ public class Main {
 		Printer brother= new Printer();
 		Printer canon = new Printer();
 		
-		System.out.println("EPSON CHARACTERS");
 		epson.printCharacters();
 		System.out.println("");
 		epson.calPrice(550);
@@ -18,7 +17,6 @@ public class Main {
 		epson.claimWarranty();
 		System.out.println("................................");
 		
-		System.out.println("HP CHARACTERS");
 		hp.printCharacters();
 		System.out.println("");
 		hp.calPrice(480);
@@ -28,7 +26,6 @@ public class Main {
 		hp.claimWarranty();
 		System.out.println("................................");
 
-		System.out.println("BROTHER CHARACTERS");
 		brother.printCharacters();
 		System.out.println("");
 		brother.calPrice(550);
@@ -38,7 +35,6 @@ public class Main {
 		brother.claimWarranty();
 		System.out.println("................................");
 		
-		System.out.println("CANON CHARACTERS");
 		canon.printCharacters();
 		System.out.println("");
 		canon.calPrice(550);
